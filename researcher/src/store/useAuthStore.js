@@ -12,9 +12,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${
-          import.meta.env.VITE_SERVER_URL
-        }/api/main/auth/researcher/forgot-password`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/forgot-password`,
         {
           method: "POST",
           headers: {
@@ -48,7 +46,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/main/auth/researcher/register`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/register`,
         {
           method: "POST",
           headers: {
@@ -80,9 +78,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${
-          import.meta.env.VITE_SERVER_URL
-        }/api/main/auth/researcher/verify-email`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/verify-email`,
         {
           method: "POST",
           headers: {
@@ -115,9 +111,7 @@ export const useAuthStore = create((set) => ({
     set({ loading: true });
     try {
       const response = await fetch(
-        `${
-          import.meta.env.VITE_SERVER_URL
-        }/api/main/auth/researcher/regenerate-otp`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/regenerate-otp`,
         {
           method: "POST",
           headers: {
@@ -143,7 +137,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/main/auth/researcher/login`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/login`,
         {
           method: "POST",
           headers: {
@@ -176,7 +170,7 @@ export const useAuthStore = create((set) => ({
   logout: async () => {
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/main/auth/researcher/logout`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/logout`,
         {
           method: "POST",
           headers: {
@@ -206,9 +200,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ checkingAuth: true });
       const response = await fetch(
-        `${
-          import.meta.env.VITE_SERVER_URL
-        }/api/main/auth/researcher/get-profile`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/get-profile`,
         {
           method: "GET",
           headers: {
@@ -237,9 +229,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${
-          import.meta.env.VITE_SERVER_URL
-        }/api/main/auth/researcher/reset-password`,
+        `${import.meta.env.VITE_API_URL}/api/main/auth/researcher/reset-password`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

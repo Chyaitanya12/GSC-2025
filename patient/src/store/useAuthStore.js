@@ -12,7 +12,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/forgot-password`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/forgot-password`,
         {
           method: "POST",
           headers: {
@@ -46,7 +46,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/register`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/register`,
         {
           method: "POST",
           headers: {
@@ -79,7 +79,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/verify-email`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/verify-email`,
         {
           method: "POST",
           headers: {
@@ -113,7 +113,7 @@ export const useAuthStore = create((set) => ({
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/regenerate-otp`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/regenerate-otp`,
         {
           method: "POST",
           headers: {
@@ -142,7 +142,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/login`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/login`,
         {
           method: "POST",
           headers: {
@@ -173,7 +173,7 @@ export const useAuthStore = create((set) => ({
   logout: async () => {
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/logout`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/logout`,
         {
           method: "POST",
           headers: {
@@ -200,7 +200,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ checkingAuth: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/get-profile`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/get-profile`,
         {
           method: "GET",
           headers: {
@@ -228,7 +228,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/reset-password`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/reset-password`,
         {
           method: "POST",
           headers: {
@@ -258,7 +258,7 @@ export const useAuthStore = create((set) => ({
     try {
       set({ loading: true });
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/api/auth/patient/contact-us`,
+        `${import.meta.env.VITE_API_URL}/api/auth/patient/contact-us`,
         {
           method: "POST",
           headers: {
