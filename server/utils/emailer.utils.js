@@ -11,7 +11,7 @@ import { transporter } from "../config/email.config.js";
 export const sendVerificationCode = async (email, verificationCode) => {
   try {
     const response = await transporter.sendMail({
-      from: '"Verify your email" <vinaayakgaikwad@gmail.com>',
+      from: '"Verify your email" <chaitanyasutrave22@gmail.com>',
       to: email,
       subject: "Verify your Email",
       text: "Verify your Email",
@@ -30,7 +30,7 @@ export const sendVerificationCode = async (email, verificationCode) => {
 export const sendWelcomeEmail = async (email, name) => {
   try {
     const response = await transporter.sendMail({
-      from: '"Welcome!" <vinaayakgaikwad@gmail.com>',
+      from: '"Welcome!" <chaitanyasutrave22@gmail.com>',
       to: email,
       subject: "Welcome Email",
       text: "Welcome to ResearchRX",
@@ -46,7 +46,7 @@ export const sendWelcomeEmail = async (email, name) => {
 export const sendResearcherPasswordResetEmail = async (email, resetToken) => {
   try {
     const response = await transporter.sendMail({
-      from: '"Password Reset" <vinaayakgaikwad@gmail.com>',
+      from: '"Password Reset" <chaitanyasutrave22@gmail.com>',
       to: email,
       subject: "Password Reset Request",
       text: "You requested a password reset. Click the link below to reset your password.",
@@ -64,7 +64,7 @@ export const sendResearcherPasswordResetEmail = async (email, resetToken) => {
 export const sendPatientPasswordResetEmail = async (email, resetToken) => {
   try {
     const response = await transporter.sendMail({
-      from: '"Password Reset" <vinaayakgaikwad@gmail.com>',
+      from: '"Password Reset" <chaitanyasutrave22@gmail.com>',
       to: email,
       subject: "Password Reset Request",
       text: "You requested a password reset. Click the link below to reset your password.",
@@ -82,7 +82,7 @@ export const sendPatientPasswordResetEmail = async (email, resetToken) => {
 export const sendPasswordResetSuccessEmail = async (email) => {
   try {
     const response = await transporter.sendMail({
-      from: '"Password Reset Successful" <vinaayakgaikwad@gmail.com>',
+      from: '"Password Reset Successful" <chaitanyasutrave22@gmail.com>',
       to: email,
       subject: "Password Reset Successful",
       text: "Your password has been reset successfully.",
@@ -97,8 +97,8 @@ export const sendPasswordResetSuccessEmail = async (email) => {
 export const sendContactFormResponse = async (name, email, message) => {
   try {
     const response = await transporter.sendMail({
-      from: '"Contact Form Response" <vinaayakgaikwad@gmail.com>',
-      to: "vinaayakgaikwad@gmail.com",
+      from: '"Contact Form Response" <chaitanyasutrave22@gmail.com>',
+      to: "chaitanyasutrave22@gmail.com",
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: Contact_Form_Response_Template.replace("{name}", name)

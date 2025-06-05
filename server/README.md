@@ -209,7 +209,7 @@ npm test -- tests/auth.test.js
 - Report new issues through GitHub
 
 ## 📞 Support
-For support, contact vinaayakgaikwad@gmail.com
+For support, contact chaitanyasutrave22@gmail.com
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.

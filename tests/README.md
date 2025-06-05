@@ -169,7 +169,7 @@ Coverage reports will be available in the `coverage` directory.
 6. Maintain test independence
 
 ## 📞 Support
-For support, contact vinaayakgaikwad@gmail.com
+For support, contact chaitanyasutrave22@gmail.com
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.

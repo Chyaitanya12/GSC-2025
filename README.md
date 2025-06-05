@@ -190,11 +190,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email vinaayakgaikwad@gmail.com
+For support, email chaitanyasutrave22@gmail.com
 
 ## 🔒 Security
 
-Please report any security issues to vinaayakgaikwad@gmail.com
+Please report any security issues to chaitanyasutrave22@gmail.com
 
 ---
 Made with ❤️ for Google Solutions Challenge 2025
