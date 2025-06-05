@@ -2,8 +2,8 @@
 
 ## Project Overview
 ResearchRX is a comprehensive healthcare platform that bridges the gap between patients and medical researchers. The platform consists of three main components:
-- Patient Portal: For managing personal health records and self-diagnosis (https://patient-researchrx.vercel.app/)
-- Researcher Portal: For medical researchers to access anonymized data and publish findings (https://researcher-researchrx.vercel.app/)
+- Patient Portal: For managing personal health records and self-diagnosis (http://localhost:5173/#/login)
+- Researcher Portal: For medical researchers to access anonymized data and publish findings (http://localhost:5174/#/login)
 - Server: Backend API handling data management and authentication
 
 ## 🚀 Quick Start
@@ -114,15 +114,34 @@ GSC_2025/
 ## 📝 API Documentation
 
 ### Authentication Endpoints
-- POST `/api/patient/auth/signup` - Patient registration
-- POST `/api/patient/auth/login` - Patient login
-- POST `/api/researcher/auth/signup` - Researcher registration
-- POST `/api/researcher/auth/login` - Researcher login
+- POST `/api/auth/patient/register` - Patient registration
+- POST `/api/auth/patient/login` - Patient login
+- POST `/api/auth/patient/logout` - Patient logout
+- POST `/api/auth/patient/verify-email` - Patient email verification
+- POST `/api/auth/patient/regenerate-otp` - Patient regenerate OTP
+- POST `/api/auth/patient/forgot-password` - Patient forgot password
+- POST `/api/auth/patient/reset-password` - Patient reset password
+- GET `/api/auth/patient/get-profile` - Get patient profile (protected)
+
+- POST `/api/main/auth/researcher/register` - Researcher registration
+- POST `/api/main/auth/researcher/login` - Researcher login
+- POST `/api/main/auth/researcher/logout` - Researcher logout
+- POST `/api/main/auth/researcher/verify-email` - Researcher email verification
+- POST `/api/main/auth/researcher/regenerate-otp` - Researcher regenerate OTP
+- POST `/api/main/auth/researcher/forgot-password` - Researcher forgot password
+- POST `/api/main/auth/researcher/reset-password` - Researcher reset password
+- GET `/api/main/auth/researcher/get-profile` - Get researcher profile (protected)
 
 ### Medical Reports
-- GET `/api/patient/reports` - Get patient's medical reports
-- POST `/api/patient/reports` - Upload new medical report
-- GET `/api/researcher/reports` - Access anonymized reports
+- POST `/api/medical/patient/add-medical-report` - Upload medical report (protected)
+- DELETE `/api/medical/patient/delete-medical-report` - Delete medical report (protected)
+- GET `/api/medical/patient/get-medical-reports` - Get patient medical reports (protected)
+- PUT `/api/medical/patient/rename-medical-report` - Rename medical report (protected)
+
+- GET `/api/medical/researcher/get-medical-reports` - Get anonymized medical reports (protected)
+- POST `/api/medical/researcher/collection/:reportId` - Add report to collection (protected)
+- DELETE `/api/medical/researcher/collection/:reportId` - Remove report from collection (protected)
+- GET `/api/medical/researcher/collection` - Get researcher collection (protected)
 
 ### Blogs
 - GET `/api/blogs` - Get all blogs
