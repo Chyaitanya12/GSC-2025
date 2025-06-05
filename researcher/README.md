@@ -3,7 +3,7 @@
 ## Overview
 The Researcher Portal is a specialized platform designed for medical researchers to access anonymized patient data, publish research findings, and collaborate with other researchers. Built with React and Vite, it provides powerful tools for medical research and data analysis.
 
-🌐 **Live Application**: [https://researcher-researchrx.vercel.app/](https://researcher-researchrx.vercel.app/)
+🌐 **Live Application**: [http://localhost:5174/#/login](http://localhost:5174/#/login)
 
 ## 🚀 Quick Start
 

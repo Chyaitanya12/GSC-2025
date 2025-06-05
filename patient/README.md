@@ -3,7 +3,7 @@
 ## Overview
 The Patient Portal is a user-friendly web application that allows patients to manage their health records, perform self-diagnosis, calculate BMI, and interact with medical professionals. Built with React and Vite, it provides a modern, responsive interface for healthcare management.
 
-🌐 **Live Application**: [https://patient-researchrx.vercel.app/](https://patient-researchrx.vercel.app/)
+🌐 **Live Application**: [http://localhost:5173/#/login](http://localhost:5173/#/login)
 
 ## 🚀 Quick Start
 
