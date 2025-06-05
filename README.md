@@ -198,3 +198,8 @@ Please report any security issues to vinaayakgaikwad@gmail.com
 
 ---
 Made with ❤️ for Google Solutions Challenge 2025
+
+---
+
+**Authorship Notice:**  
+This project and all its components are created solely by Chaitanya Sutrave.

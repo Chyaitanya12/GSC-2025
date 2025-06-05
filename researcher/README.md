@@ -168,3 +168,8 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 
 ---
 Part of ResearchRX - Google Solutions Challenge 2025
+
+---
+
+**Authorship Notice:**  
+This project and all its components are created solely by Chaitanya Sutrave.
