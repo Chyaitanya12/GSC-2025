@@ -15,6 +15,7 @@ import blogTemplateRouter from "./router/blog.template.router.js";
 import periodicTableRouter from "./router/periodicTable.router.js";
 import chatRouter from "./router/chat.router.js";
 import drugContributionRouter from "./router/drugContribution.router.js";
+import aiRouter from "./router/ai.router.js";
 
 dotenv.config();
 
@@ -73,6 +74,7 @@ app.use("/api/templates/blog", blogTemplateRouter);
 app.use("/api/researcher", periodicTableRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/drugs", drugContributionRouter);
+app.use("/api/ai", aiRouter);
 
 app.get("/", (req, res) => {
   try {

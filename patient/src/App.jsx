@@ -17,6 +17,7 @@ import { useAuthStore } from "./store/useAuthStore";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import ForgotPassword from "./components/ForgotPassword";
+import AIHealthAssistant from "./components/AIHealthAssistant";
 
 const App = () => {
   const { authUser } = useAuthStore();
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Toaster />
+      {authUser && <AIHealthAssistant />}
     </Router>
   );
 };
